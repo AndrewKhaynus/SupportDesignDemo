@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.d_rom.supportdesigndemo.adapter.TabFragmentAdapter;
 
@@ -70,9 +71,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     super.onTabSelected(_tab);
                     if (_tab.getPosition() % 3 == 0){
                         Log.d(TAG, "show");
+                        Toast.makeText(MainActivity.this, "show button", Toast.LENGTH_SHORT).show();
                         mFab.show();
                     }else {
                         Log.d(TAG, "hide");
+                        Toast.makeText(MainActivity.this, "hide button", Toast.LENGTH_SHORT).show();
                         mFab.hide();
                     }
                 }
