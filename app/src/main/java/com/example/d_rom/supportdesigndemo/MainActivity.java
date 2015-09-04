@@ -22,6 +22,8 @@ import com.example.d_rom.supportdesigndemo.adapter.TabFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    public static final String TAG = "sometag";
+
     private Toolbar mToolbar;
     private DrawerLayout mDrawerLayout;
     private NavigationView mNavigationView;
@@ -67,10 +69,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onTabSelected(TabLayout.Tab _tab) {
                     super.onTabSelected(_tab);
                     if (_tab.getPosition() % 3 == 0){
-                        Log.d("sometag", "show");
+                        Log.d(TAG, "show");
                         mFab.show();
                     }else {
-                        Log.d("sometag", "hide");
+                        Log.d(TAG, "hide");
                         mFab.hide();
                     }
                 }
