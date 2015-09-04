@@ -38,7 +38,7 @@ public class SimpleListFragment extends Fragment {
     private List<String> getDummyData() {
         final List<String> list = new ArrayList<>();
         for(int i = 0; i < 40; i++){
-            list.add("List Item " + i);
+            list.add("Some text" + i);
         }
         return list;
     }
