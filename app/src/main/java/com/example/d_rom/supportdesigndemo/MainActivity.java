@@ -23,7 +23,7 @@ import com.example.d_rom.supportdesigndemo.adapter.TabFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    public static final String TAG = "sometag";
+    public static final String TAG = "mytag";
 
     private Toolbar mToolbar;
     private DrawerLayout mDrawerLayout;
